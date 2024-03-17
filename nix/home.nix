@@ -57,6 +57,10 @@
     grc
     jetbrains.idea-ultimate
     neofetch
+    jdk17
+    openjdk8
+    openjdk19
+    spotify
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -74,6 +78,12 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  programs.git = {
+    enable = true;
+    userName = "Arctic904";
+    userEmail = "53384010+Arctic904@users.noreply.github.com";
+  };
 
   dconf = {
     enable = true;

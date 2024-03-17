@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   environment.variables = rec {
-    NIX_PATH = lib.mkForce  "/home/ryan/dotfiles/nix/configuration.nix";
+    NIX_PATH = lib.mkForce "nixpkgs=/nix/var/nix/profiles/per-user/root/channels/nixos:nixos-config=/etc/nixos/configuration.nix:/nix/var/nix/profiles/per-user/root/channels:custom=/home/ryan/dotfiles/nix/configuration.nix";
     HOME_MANAGER_CONFIG = "/home/ryan/dotfiles/nix/home.nix";
   };
 
